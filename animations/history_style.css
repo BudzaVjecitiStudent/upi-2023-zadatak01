@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body {
+  background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size: cover;
+  font-family: 'Source Code Pro', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.animated-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+  z-index: -1;
+  animation: slidein 100s infinite alternate;
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+a{
+  color: white;
+  font-weight: bold;
+}
+
+.center h1 {
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+form {
+  margin-top: 150px;
+  text-align: center;
+}
+label {
+  color: black;
+  font-weight: bold;
+}
+label1 {
+  color: white;
+  font-weight: bold; 
+}
+
+h2{
+  color: white;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 20px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="/animations/style.css">
+    <script src="kod.js"></script>
+</head>
+<body onload="getScores()" style="background: rgb(228, 252, 43); background: linear-gradient(90deg, rgb(228, 252, 43) 0%, rgb(255, 149, 57) 26%, rgba(0,212,255,1) 100%);">
+    
+<div id="scoreboard">
+    <div id="paragraph-container" style="text-align: center;">
+        <p class="paragraph"></p>
+    </div>
+        
+ 
+</div>
+
+</body>
+
+<div >
+    <script>
+        function getScores() {
+            let igraci = dohvatiLocalStorage('Igraci');
+            igraci.forEach(element => {
+            document.write( 
+                "<div style='background: rgb(228, 252, 43); background: linear-gradient(90deg, rgba(228, 252, 43) 0%, rgba(255, 149, 57) 26%, rgba(0,212,255,1) 100%); text-align: center; color:black'>" ,
+               "<h3>" , element.ime , ": " , element.bodovi, "</h3>" ,
+               "</div>");
+            });
+        }
+        </script>
+
+</div>
+</html>

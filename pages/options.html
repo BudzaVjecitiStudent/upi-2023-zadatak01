@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/animations/style.css">
+  <link rel="stylesheet" href="/animations/options_style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="kod.js"></script>
+</head>
+
+<body onload="addEvent()">
+  <script>
+    function addEvent() {
+      document.body.addEventListener("click", play);
+    }
+
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+  </script>
+
+
+  <audio id="audio" src="SoundClick.mp3"></audio>
+
+  <br><br><br><br>
+  <div class="lines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <center>
+    <div>
+    <p><a href="logout.html">LOGOUT</a></p>
+    </div>
+    </center>
+    <center>
+      <br>
+      <p>MUSIC</p>
+      <img src="sound_on.png" class="slika"><br>
+      <p>SOUND</p>
+      <img src="sound_on.png" class="slika">
+      <br><br><br>
+   </center>
+   <center>
+    <div>
+      <p><a href="index.html">BACK</a></p> 
+    </div>
+   </center>
+
+
+</body>
+
+</html>

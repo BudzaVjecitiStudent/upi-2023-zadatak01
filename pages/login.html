@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/animations/login_style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="kod.js"></script>
+</head>
+
+<body onload="addEvent()">
+  <script>
+    function addEvent() {
+      document.body.addEventListener("click", play);
+    }
+
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+  </script>
+
+
+  <audio id="audio" src="/animations/SoundClick.mp3"></audio>
+
+
+  <center><br><br>
+    <form id="form">
+      <label for="Name">Name:</label>
+      <input type="text" id="Name" name="Name" placeholder="-Username-">
+      <br><label for="Password">Password:</label>
+      <input type="password" id="Password" password="Password" placeholder="-Password-">
+      <br>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <a href="index.html"> BACK</a>
+
+    <script>
+      function validate() {
+        var username = document.getElementById("Name").value;
+        var password = document.getElementById("Password").value;
+        if (provjeriLozinku(username, password)) {
+          if (window.confirm('Login succesfull.')) {
+            posaljiLocalStorage('LoggedUser', username);
+            window.location.replace('index.html');
+          }
+        }
+        else {
+          window.alert("Username or password incorrect.");
+        }
+      }
+
+      const form = document.getElementById("form");
+      form.addEventListener("submit", validate);
+
+    </script>
+
+    <div class="pattern0 fireworks fire0">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern1 fireworks fire1">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern2 fireworks fire2">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern3 fireworks fire3">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern4 fireworks fire4">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern5 fireworks fire5">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern6 fireworks fire6">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern7 fireworks fire7">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern8 fireworks fire8">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern9 fireworks fire9">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern10 fireworks fire10">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern11 fireworks fire11">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern12 fireworks fire12">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern13 fireworks fire13">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern14 fireworks fire14">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern15 fireworks fire15">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern16 fireworks fire16">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern17 fireworks fire17">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern18 fireworks fire18">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+    <div class="pattern19 fireworks fire19">
+      <div class="ring_1"></div>
+      <div class="ring_2"></div>
+    </div>
+
+
+  </center>
+
+</body>
+
+</html>

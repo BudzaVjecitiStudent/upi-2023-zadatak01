@@ -1,0 +1,121 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    background: linear-gradient(#6084d7 25%, #a2cef4 50%, #a2cef4 50%, #6084d7 100%);
+    margin: 0;
+    font-size: 20px;
+    overflow-y: scroll;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    perspective: 360px;
+    perspective-origin: 50% 50%;
+    z-index: 1;
+}
+
+  a, p {
+    color: #ffffff ;
+}
+
+.top-plane,
+.bottom-plane {
+    width: 200%;
+    height: 130%;
+    position: absolute;
+    bottom: -30%;
+    left: -50%;
+    background-image: -webkit-linear-gradient(#a2cef4 2px, transparent 2px),
+                        -webkit-linear-gradient(left, #a2cef4 2px, transparent 2px);
+    background-size: 100px 100px, 100px 100px;
+    background-position: -1px -1px, -1px -1px;
+    transform: rotateX(85deg);
+    animation: planeMoveTop 2s infinite linear;
+    z-index: 1;
+}
+
+.bottom-plane {
+    transform: rotateX(-85deg);
+    top: -30%;
+    animation: planeMoveBot 2s infinite linear;
+    z-index: 1;
+}
+
+@keyframes planeMoveTop {
+    from {
+        background-position: 0px -100px, 0px 0px;
+    }
+    to {
+        background-position: 0px 0px, 100px 0px;
+    }
+}
+
+@keyframes planeMoveBot {
+    from {
+        background-position: 0px 0px, 0px 0px;
+    }
+    to {
+        background-position: 0px -100px, 100px 0px;
+    }
+}
+
+@media (max-height: 350px) {
+    .wrap {
+        perspective: 210px;
+    }
+}
+
+form {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+fieldset {
+    border: 1px solid white;
+    border-radius: 10px; 
+    margin-bottom: 20px;
+    padding: 10px; 
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(82, 169, 240);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button :hover{
+    color: rgb(255, 127, 127);
+}
+

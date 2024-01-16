@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/animations/style.css">
+  <link rel="stylesheet" href="/animations/literature_style.css">
+
+  <style>
+
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="kod.js"></script>
+</head>
+
+<body onload="addEvent()">
+  <script>
+    function addEvent() {
+      document.body.addEventListener("click", play);
+    }
+
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+  </script>
+
+
+  <audio id="audio" src="SoundClick.mp3"></audio>
+
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+
+  <form id="form">
+    <fieldset id="lit_q1">
+      <h1>Pitanje 1: Tko je napisao Moby Dicka?</h1>
+      <div>
+        <input type="radio" id="lit_q1_choice1" name="lit_q1" value="N" />
+        <label for="lit_q1_choice1">Jack Williamson</label>
+
+        <input type="radio" id="lit_q1_choice2" name="lit_q1" value="N" />
+        <label for="lit_q1_choice1">William Gibson</label>
+
+        <input type="radio" id="lit_q1_choice3" name="lit_q1" value="N" />
+        <label for="lit_q1_choice1">Charles Bukowski</label>
+
+        <input type="radio" id="lit_q1_choice4" name="lit_q1" value="T" />
+        <label for="lit_q1_choice1">Herman Melvill</label>
+    </fieldset>
+    <fieldset id="lit_q2">
+      <h1>Pitanje 2: Kako se zove konj sive boje?</h1>
+      <div>
+        <input type="radio" id="lit_q2_choice1" name="lit_q2" value="N" />
+        <label for="lit_q2_choice1">Šarac</label>
+
+        <input type="radio" id="lit_q2_choice2" name="lit_q2" value="N" />
+        <label for="lit_q2_choice1">Dorat</label>
+
+        <input type="radio" id="lit_q2_choice3" name="lit_q2" value="T" />
+        <label for="lit_q2_choice1">Zelenko</label>
+
+        <input type="radio" id="lit_q2_choice4" name="lit_q2" value="N" />
+        <label for="lit_q2_choice1">Sivko</label>
+    </fieldset>
+    <fieldset id="lit_q3">
+      <h1>Pitanje 3: Iz koje knjige je citat: "Čovjek samo srcem dobro vidi. Ono bitno, očima je nevidljivo."</h1>
+      <div>
+        <input type="radio" id="lit_q3_choice1" name="lit_q3" value="N" />
+        <label for="lit_q3_choice1">Miševi i mačke naglavačke</label>
+
+        <input type="radio" id="lit_q3_choice2" name="lit_q3" value="T" />
+        <label for="lit_q3_choice1">Mali princ</label>
+
+        <input type="radio" id="lit_q3_choice3" name="lit_q3" value="N" />
+        <label for="lit_q3_choice1">Petar Pan</label>
+
+        <input type="radio" id="lit_q3_choice4" name="lit_q3" value="N" />
+        <label for="lit_q3_choice1">Smogovci</label>
+    </fieldset>
+    <fieldset id="lit_q4">
+      <h1>Pitanje 4: Mahabharata i Ramajana su indijski epovi koji spadaju u vrhunce svjetske pisane riječi. Oba su
+        napisana na istom jeziku. Kojem?</h1>
+      <div>
+        <input type="radio" id="lit_q4_choice1" name="lit_q4" value="T" />
+        <label for="lit_q4_choice1">Sanskrt</label>
+
+        <input type="radio" id="lit_q4_choice2" name="lit_q4" value="N" />
+        <label for="lit_q4_choice1">Devanagari</label>
+
+        <input type="radio" id="lit_q4_choice3" name="lit_q4" value="N" />
+        <label for="lit_q4_choice1">Hebrejski</label>
+
+        <input type="radio" id="lit_q4_choice4" name="lit_q4" value="N" />
+        <label for="lit_q4_choice1">Tamilski</label>
+    </fieldset>
+    <fieldset id="lit_q5">
+      <h1>Pitanje 5: U kojoj se vrsti slave životne radosti i ljepota prirode?</h1>
+      <div>
+        <input type="radio" id="lit_q5_choice1" name="lit_q5" value="N" />
+        <label for="lit_q5_choice1">U odi</label>
+
+        <input type="radio" id="lit_q5_choice2" name="lit_q5" value="N" />
+        <label for="lit_q5_choice1">U himni</label>
+
+        <input type="radio" id="lit_q5_choice3" name="lit_q5" value="N" />
+        <label for="lit_q5_choice1">U elegiji</label>
+
+        <input type="radio" id="lit_q5_choice4" name="lit_q5" value="T" />
+        <label for="lit_q5_choice1">U ditirambu</label>
+    </fieldset>
+    <fieldset id="lit_q6">
+      <h1>Pitanje 6: Koji je pjesnik u svojoj jedinoj pjesničkoj zbirci reducirao interpunkciju i stvorio novi tip
+        stiha?</h1>
+      <div>
+        <input type="radio" id="lit_q6_choice1" name="lit_q6" value="T" />
+        <label for="lit_q6_choice1">Šimić</label>
+
+        <input type="radio" id="lit_q6_choice2" name="lit_q6" value="N" />
+        <label for="lit_q6_choice1">Matoš</label>
+
+        <input type="radio" id="lit_q6_choice3" name="lit_q6" value="N" />
+        <label for="lit_q6_choice1">Cesarić</label>
+
+        <input type="radio" id="lit_q6_choice4" name="lit_q6" value="N" />
+        <label for="lit_q6_choice1">Ujević</label>
+    </fieldset>
+    <fieldset id="lit_q7">
+      <h1>Pitanje 7: U kojem je razdoblju stvarao Fran Krsto Frankopan?</h1>
+      <div>
+        <input type="radio" id="lit_q7_choice1" name="lit_q7" value="N" />
+        <label for="lit_q7_choice1">U klasicizmu</label>
+
+        <input type="radio" id="lit_q7_choice2" name="lit_q7" value="N" />
+        <label for="lit_q7_choice1">U prosvjetiteljstvu</label>
+
+        <input type="radio" id="lit_q7_choice3" name="lit_q7" value="N" />
+        <label for="lit_q7_choice1">U srednjem vijeku</label>
+
+        <input type="radio" id="lit_q7_choice4" name="lit_q7" value="T" />
+        <label for="lit_q7_choice1">U baroku</label>
+    </fieldset>
+    <fieldset id="lit_q8">
+      <h1>Pitanje 8: Koja je stilska figura upotrijebljena u rečenici: Prvo pero hrvatskih krimića uskoro objavljuje još
+        jedan roman?</h1>
+      <div>
+        <input type="radio" id="lit_q8_choice1" name="lit_q8" value="N" />
+        <label for="lit_q8_choice1">Metafora</label>
+
+        <input type="radio" id="lit_q8_choice2" name="lit_q8" value="N" />
+        <label for="lit_q8_choice1">Eufemizam</label>
+
+        <input type="radio" id="lit_q8_choice3" name="lit_q8" value="N" />
+        <label for="lit_q8_choice1">Hiperbola</label>
+
+        <input type="radio" id="lit_q8_choice4" name="lit_q8" value="T" />
+        <label for="lit_q8_choice1">Metonimija</label>
+    </fieldset>
+    <fieldset id="lit_q9">
+      <h1>Pitanje 9: Koje djelo ne pripada glembajevskom dramskom ciklusu Miroslava Krleže?</h1>
+      <div>
+        <input type="radio" id="lit_q9_choice1" name="lit_q9" value="N" />
+        <label for="lit_q9_choice1">Leda</label>
+
+        <input type="radio" id="lit_q9_choice2" name="lit_q9" value="N" />
+        <label for="lit_q9_choice1">U agoniji</label>
+
+        <input type="radio" id="lit_q9_choice3" name="lit_q9" value="N" />
+        <label for="lit_q9_choice1">Gospoda Glembajevi</label>
+
+        <input type="radio" id="lit_q9_choice4" name="lit_q9" value="T" />
+        <label for="lit_q9_choice1">Bobočka</label>
+    </fieldset>
+    <fieldset id="lit_q10">
+      <h1>Pitanje 10: Po kojem se književniku, preminulom 1881. godine, naziva hrvatski predrealizam?</h1>
+      <div>
+        <input type="radio" id="lit_q10_choice1" name="lit_q10" value="N" />
+        <label for="lit_q10_choice1">po Ljudevitu Gaju</label>
+
+        <input type="radio" id="lit_q10_choice2" name="lit_q10" value="N" />
+        <label for="lit_q10_choice1">po Dimitriju Demeteru</label>
+
+        <input type="radio" id="lit_q10_choice3" name="lit_q10" value="T" />
+        <label for="lit_q10_choice1">po Augustu Šenoi</label>
+
+        <input type="radio" id="lit_q10_choice4" name="lit_q10" value="N" />
+        <label for="lit_q10_choice1">po Josipu Eugenu Tomiću</label>
+    </fieldset>
+
+    <center>
+      <p><button type="submit">Submit</button>
+        <a href="play.html">BACK</a>
+      </p>
+    </center>
+  </form>
+
+</body>
+
+<script>
+  function logSubmit(event) {
+    event.preventDefault();
+    let odgovori = [
+    document.getElementById("lit_q1_choice4").checked,
+    document.getElementById("lit_q2_choice3").checked,
+    document.getElementById("lit_q3_choice2").checked,
+    document.getElementById("lit_q4_choice1").checked,
+    document.getElementById("lit_q5_choice4").checked,
+    document.getElementById("lit_q6_choice4").checked,
+    document.getElementById("lit_q7_choice4").checked,
+    document.getElementById("lit_q8_choice4").checked,
+    document.getElementById("lit_q9_choice4").checked,
+    document.getElementById("lit_q10_choice3").checked
+    ]
+    let trenutni = 0
+    odgovori.forEach(el => {
+      if (el) {
+        trenutni += 1
+      }
+    })
+    console.log(odgovori)
+    console.log("br bodova", trenutni)
+    let user = dohvatiLocalStorage('LoggedUser')
+    let igraci = dohvatiLocalStorage('Igraci')
+    let index = null
+    for (let i = 0; i < igraci.length; i++) {
+      if (igraci[i] && igraci[i].ime == user) {
+        console.log(`Igrač ${user} autoriziran.`)
+        index = i
+      }
+    }
+    if (index != null) {
+      console.log("evo me na ", index)
+      let bodovi = parseInt(igraci[index].bodovi)
+      bodovi += trenutni
+      igraci[index].bodovi = bodovi
+      console.log(bodovi)
+      posaljiLocalStorage('Igraci', igraci);
+    }
+    else {
+      window.alert("User not logged in.")
+    }
+  }
+  const form = document.getElementById("form");
+  form.addEventListener("submit", logSubmit);
+
+</script>
+
+</html>

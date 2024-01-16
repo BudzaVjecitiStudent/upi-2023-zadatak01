@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/animations/style.css">
+  <link rel="stylesheet" href="/animations/history_style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="kod.js"></script>
+</head>
+
+<body onload="addEvent()">
+  <script>
+    function addEvent() {
+      document.body.addEventListener("click", play);
+    }
+
+    function play() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    }
+  </script>
+
+
+  <audio id="audio" src="SoundClick.mp3"></audio>
+  
+  <div class="center">
+  </div>
+
+  <form id="form">
+    <fieldset id="lit_q1">
+      <h1>Pitanje 1: Tko je bio prvi predsjednik Sjedinjenih Američkih Država?</h1>
+      <div>
+        <input type="radio" id="lit_q1_choice1" name="lit_q1" value="T" />
+        <label for="lit_q1_choice1">Thomas Jefferson</label>
+
+        <input type="radio" id="lit_q1_choice2" name="lit_q1" value="N" />
+        <label for="lit_q1_choice1">George Washington</label>
+
+        <input type="radio" id="lit_q1_choice3" name="lit_q1" value="N" />
+        <label for="lit_q1_choice1">Abraham Lincoln</label>
+
+        <input type="radio" id="lit_q1_choice4" name="lit_q1" value="N" />
+        <label for="lit_q1_choice1">John Adams</label>
+    </fieldset>
+    <fieldset id="lit_q2">
+      <h1>Pitanje 2: Koje je godina završio Prvi svjetski rat?</h1>
+      <div>
+        <input type="radio" id="lit_q2_choice1" name="lit_q2" value="N" />
+        <label for="lit_q2_choice1">1917</label>
+
+        <input type="radio" id="lit_q2_choice2" name="lit_q2" value="T" />
+        <label for="lit_q2_choice1">1918</label>
+
+        <input type="radio" id="lit_q2_choice3" name="lit_q2" value="N" />
+        <label for="lit_q2_choice1">1919</label>
+
+        <input type="radio" id="lit_q2_choice4" name="lit_q2" value="N" />
+        <label for="lit_q2_choice1">1920</label>
+    </fieldset>
+    <fieldset id="lit_q3">
+      <h1>Pitanje 3: Koja zemlja je bila domaćin prvim modernim Olimpijskim igrama u novom vijeku?</h1>
+      <div>
+        <input type="radio" id="lit_q3_choice1" name="lit_q3" value="N" />
+        <label for="lit_q3_choice1">Francuska</label>
+
+        <input type="radio" id="lit_q3_choice2" name="lit_q3" value="N" />
+        <label for="lit_q3_choice1">Njemačka</label>
+
+        <input type="radio" id="lit_q3_choice3" name="lit_q3" value="T" />
+        <label for="lit_q3_choice1">Grčka</label>
+
+        <input type="radio" id="lit_q3_choice4" name="lit_q3" value="N" />
+        <label for="lit_q3_choice1">Italija</label>
+    </fieldset>
+    <fieldset id="lit_q4">
+      <h1>Pitanje 4: Koji poznati lider je bio vođa Sovjetskog Saveza tijekom Hladnog rata?</h1>
+        <input type="radio" id="lit_q4_choice1" name="lit_q4" value="T" />
+        <label for="lit_q4_choice1">Joseph Stalin</label>
+
+        <input type="radio" id="lit_q4_choice2" name="lit_q4" value="N" />
+        <label for="lit_q4_choice1">Vladimir Lenin</label>
+
+        <input type="radio" id="lit_q4_choice3" name="lit_q4" value="N" />
+        <label for="lit_q4_choice1">Nikita Khrushchev</label>
+
+        <input type="radio" id="lit_q4_choice4" name="lit_q4" value="N" />
+        <label for="lit_q4_choice1">Leon Trotsky</label>
+    </fieldset>
+    <fieldset id="lit_q5">
+      <h2>Pitanje 5: Koji događaj označava početak Američkog Građanskog rata?</h2>
+      <div>
+        <input type="radio" id="lit_q5_choice1" name="lit_q5" value="T" />
+        <label1 for="lit_q5_choice1"> Bitka kod Gettysburga</label1>
+
+        <input type="radio" id="lit_q5_choice2" name="lit_q5" value="N" />
+        <label1 for="lit_q5_choice1">Pohod na Fort Sumter</label1>
+
+        <input type="radio" id="lit_q5_choice3" name="lit_q5" value="N" />
+        <label1 for="lit_q5_choice1">Povlačenje iz Yorktowna</label1>
+
+        <input type="radio" id="lit_q5_choice4" name="lit_q5" value="N" />
+        <label1 for="lit_q5_choice1">Rat s Meksikom</label1>
+    </fieldset>
+    <fieldset id="lit_q6">
+      <h2>Pitanje 6: Tko je bio egipatski faraon poznat po izgradnji Velike piramide u Gizi?</h2>
+      <div>
+        <input type="radio" id="lit_q6_choice1" name="lit_q6" value="N" />
+        <label1 for="lit_q6_choice1">Tutankhamun</label1>
+
+        <input type="radio" id="lit_q6_choice2" name="lit_q6" value="N" />
+        <label1 for="lit_q6_choice1">Ramses II</label1>
+
+        <input type="radio" id="lit_q6_choice3" name="lit_q6" value="T" />
+        <label1 for="lit_q6_choice1">Khufu (Keops)</label1>
+
+        <input type="radio" id="lit_q6_choice4" name="lit_q6" value="N" />
+        <label1 for="lit_q6_choice1">Akhenaten</label1>
+    </fieldset>
+    <fieldset id="lit_q7">
+      <h2>Pitanje 7: Koji događaj je pokrenuo Prvi svjetski rat?</h2>
+      <div>
+        <input type="radio" id="lit_q7_choice1" name="lit_q7" value="T" />
+        <label1 for="lit_q7_choice1">Atentat u Sarajevu</label1>
+
+        <input type="radio" id="lit_q7_choice2" name="lit_q7" value="N" />
+        <label1 for="lit_q7_choice1">Invazija Poljske</label1>
+
+        <input type="radio" id="lit_q7_choice3" name="lit_q7" value="N" />
+        <label1 for="lit_q7_choice1">Potonuće Titanica</label1>
+
+        <input type="radio" id="lit_q7_choice4" name="lit_q7" value="N" />
+        <label1 for="lit_q7_choice1">Oktobarska revolucija</label1>
+    </fieldset>
+    <fieldset id="lit_q8">
+      <h2>Pitanje 8: Tko je bio lider Sjedinjenih Američkih Država tijekom Drugog svjetskog rata?</h2>
+      <div>
+        <input type="radio" id="lit_q8_choice1" name="lit_q8" value="T" />
+        <label1 for="lit_q8_choice1">Franklin D. Roosevelt</label1>
+
+        <input type="radio" id="lit_q8_choice2" name="lit_q8" value="N" />
+        <label1 for="lit_q8_choice1">Harry S. Truman</label1>
+
+        <input type="radio" id="lit_q8_choice3" name="lit_q8" value="N" />
+        <label1 for="lit_q8_choice1">Dwight D. Eisenhower</label1>
+
+        <input type="radio" id="lit_q8_choice4" name="lit_q8" value="N" />
+        <label1 for="lit_q8_choice1">John F. Kennedy</label1>
+    </fieldset>
+    <fieldset id="lit_q9">
+      <h2>Pitanje 9: Koja je osoba odigrala ključnu ulogu u vođenju mirnog otpora protiv apartheida u Južnoj Africi?</h2>
+      <div>
+        <input type="radio" id="lit_q9_choice1" name="lit_q9" value="N" />
+        <label1 for="lit_q9_choice1">Nelson Mandela</label1>
+
+        <input type="radio" id="lit_q9_choice2" name="lit_q9" value="T" />
+        <label1 for="lit_q9_choice1">Desmond Tutu</label1>
+
+        <input type="radio" id="lit_q9_choice3" name="lit_q9" value="N" />
+        <label1 for="lit_q9_choice1">Steve Biko</label1>
+
+        <input type="radio" id="lit_q9_choice4" name="lit_q9" value="N" />
+        <label1 for="lit_q9_choice1">F. W. de Klerk</label1>
+    </fieldset>
+    <fieldset id="lit_q10">
+      <h2>Pitanje 10: Koji događaj je označio kraj Hladnog rata?</h2>
+      <div>
+        <input type="radio" id="lit_q10_choice1" name="lit_q10" value="N" />
+        <label1 for="lit_q10_choice1">Osnivanje NATO-a</label1>
+
+        <input type="radio" id="lit_q10_choice2" name="lit_q10" value="N" />
+        <label1 for="lit_q10_choice1">Korejski rat</label1>
+
+        <input type="radio" id="lit_q10_choice3" name="lit_q10" value="N" />
+        <label1 for="lit_q10_choice1">Kubanska raketna kriza</label1>
+
+        <input type="radio" id="lit_q10_choice4" name="lit_q10" value="T" />
+        <label1 for="lit_q10_choice1">Pad Berlinskog zida</label1>
+    </fieldset>
+
+    <p><button type="submit">Submit</button>
+    <a href="play.html">BACK</a></p>
+  </form>
+  <script>
+    window.onscroll = function () {
+      var scrollPos = window.scrollY;
+      var background = document.querySelector('.animated-background');
+      background.style.backgroundPositionY = -scrollPos + 'px';
+    };
+
+    
+function zbrojiBodove() {
+    let trenutni = document.getElementById
+}
+
+
+function logSubmit(event) {
+    event.preventDefault();
+    let odgovori = [
+      document.getElementById("lit_q1_choice1").checked,
+      document.getElementById("lit_q2_choice2").checked,
+      document.getElementById("lit_q3_choice3").checked,
+      document.getElementById("lit_q4_choice1").checked,
+      document.getElementById("lit_q5_choice1").checked,
+      document.getElementById("lit_q6_choice3").checked,
+      document.getElementById("lit_q7_choice1").checked,
+      document.getElementById("lit_q8_choice1").checked,
+      document.getElementById("lit_q9_choice2").checked,
+      document.getElementById("lit_q10_choice4").checked
+    ]
+    let trenutni = 0
+    odgovori.forEach(el => {
+      if(el) {
+        trenutni += 1
+      }
+    })
+    console.log(odgovori)
+    console.log("br bodova", trenutni)
+    let user = dohvatiLocalStorage('LoggedUser')
+    let igraci = dohvatiLocalStorage('Igraci')
+    let index = null
+    for (let i = 0; i < igraci.length; i++) {
+        if (igraci[i] && igraci[i].ime == user) {
+            console.log(`Igrač ${user} autoriziran.`)
+            index = i
+        }
+    }
+    if(index != null) {
+      console.log("evo me na ", index)
+      let bodovi = parseInt(igraci[index].bodovi)
+      bodovi += trenutni
+      igraci[index].bodovi = bodovi
+      console.log(bodovi)
+      posaljiLocalStorage('Igraci', igraci); 
+    }
+    else {
+      window.alert("User not logged in.")
+    }
+}
+
+const form = document.getElementById("form");
+form.addEventListener("submit", logSubmit);
+
+  </script>
+
+
+</body>
+
+</html>
